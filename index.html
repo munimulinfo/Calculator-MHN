@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator With Dom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#3b4664]">
+    <div class="w-[400px] mx-auto p-8">
+      <h2 class="text-white text-3xl font-semibold text-center mb-6">
+       MHN Calculator
+      </h2>
+      <div>
+        <input
+          id="input-field"
+          class="py-6 px-4 w-full rounded-md bg-[#181f32] text-white"
+          type="text"
+          disabled
+        />
+
+        <div class="bg-[#252c48] mt-4 p-4 rounded-md">
+          <div class="flex flex-col" id="parent-container">
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                7
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                8
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                9
+              </button>
+              <button
+                class="btn-main bg-orange-500 font-bold rounded-md py-2 text-1xl text-white"
+              >
+                DEL
+              </button>
+            </div>
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                4
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                5
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                6
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                +
+              </button>
+            </div>
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                1
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                2
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                3
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                -
+              </button>
+            </div>
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                .
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                0
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                /
+              </button>
+              <button
+                class="btn-main bg-[white] font-bold rounded-md py-2 text-1xl text-orange-500"
+              >
+                *
+              </button>
+            </div>
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <button
+                class="btn-main bg-orange-500 font-bold rounded-md py-2 text-1xl text-white col-span-2"
+              >
+                BACK
+              </button>
+              <button
+                class="btn-main bg-cyan-700 font-bold rounded-md py-2 text-1xl text-white col-span-2"
+              >
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
